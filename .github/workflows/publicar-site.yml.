@@ -1,0 +1,52 @@
+# Publica o site btabrasil.com.br na hospedagem (GoDaddy) por FTP
+# sempre que uma alteração chega à branch main no GitHub.
+#
+# Configuração (uma vez só), em GitHub > repositório > Settings > Secrets and variables > Actions:
+#   Secrets:   FTP_SERVIDOR  (ex.: ftp.btabrasil.com.br)
+#              FTP_USUARIO   (usuário FTP do cPanel)
+#              FTP_SENHA     (senha desse usuário)
+#   Variables (opcionais):
+#              FTP_PASTA     pasta do site no servidor; padrão "public_html/"
+#                            (use "./" se o usuário FTP já abre direto dentro da pasta do site)
+#              FTP_PROTOCOLO "ftps" (padrão, conexão cifrada) ou "ftp" se o servidor não aceitar FTPS
+#
+# Só são enviados os arquivos que mudaram desde a última publicação.
+# Arquivos que já existem no servidor e não fazem parte do repositório não são apagados.
+
+name: Publicar site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:   # permite publicar manualmente pela aba Actions
+
+concurrency:
+  group: publicar-site
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Baixar os arquivos do repositório
+        uses: actions/checkout@v4
+
+      - name: Enviar para a hospedagem por FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVIDOR }}
+          username: ${{ secrets.FTP_USUARIO }}
+          password: ${{ secrets.FTP_SENHA }}
+          protocol: ${{ vars.FTP_PROTOCOLO || 'ftps' }}
+          security: loose
+          server-dir: ${{ vars.FTP_PASTA || 'public_html/' }}
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github/**
+            **/.claude/**
+            **/node_modules/**
+            PUBLICAR.md
+            start-servers.sh
+            package-lock.json
