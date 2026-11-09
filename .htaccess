@@ -20,3 +20,8 @@ Options -Indexes
   AddType video/mp4 .mp4
   AddType video/webm .webm
 </IfModule>
+
+# Arquivo de controle da publicação automática (GitHub Actions): não deve ficar acessível
+<Files ".ftp-deploy-sync-state.json">
+  Require all denied
+</Files>
