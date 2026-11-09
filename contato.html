@@ -3,48 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato | BTA - Business Tax Advisory</title>
-  <meta name="description" content="Entre em contato com a BTA. Solicite um diagnóstico gratuito e fale com nossos especialistas em consultoria tributária.">
-  <link rel="stylesheet" href="css/style.css">
+  <title>Contato | BTA Brasil</title>
+  <meta name="description" content="Fale com a equipe da BTA Business Tax Advisory. Agende uma sessão de contexto gratuita de uma hora sobre a sua operação.">
+  <link rel="canonical" href="https://www.btabrasil.com.br/contato.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="theme-color" content="#0f2138">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BTA Brasil">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://www.btabrasil.com.br/contato.html">
+  <meta property="og:title" content="Contato | BTA Brasil">
+  <meta property="og:description" content="Fale com a equipe da BTA Business Tax Advisory. Agende uma sessão de contexto gratuita de uma hora sobre a sua operação.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Contato | BTA Brasil">
+  <meta name="twitter:description" content="Agende uma sessão de contexto gratuita de uma hora sobre a sua operação.">
+  <link rel="stylesheet" href="css/style.css?v=6">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <a href="#main" class="skip-link">Pular para o conteúdo</a>
 
   <nav class="navbar">
     <a href="index.html" class="logo">
-      <div class="logo-icon">BTA</div>
+      <div class="logo-icon"></div>
       <div>
-        <span class="logo-text">Business Tax Advisory</span>
-        <span class="logo-subtext">Consultoria Tributária</span>
+        <span class="logo-text">BTA Brasil</span>
+        <span class="logo-subtext">Consultoria Tributária e TI</span>
       </div>
     </a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Início</a></li>
       <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="index.html#ferramentas">Ferramentas</a></li>
       <li><a href="reforma-tributaria.html">Reforma Tributária</a></li>
       <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="quem-somos.html">Quem Somos</a></li>
       <li><a href="contato.html" class="nav-cta active">Fale Conosco</a></li>
     </ul>
-    <div class="hamburger">
+    <button type="button" class="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
       <span></span><span></span><span></span>
-    </div>
+    </button>
   </nav>
 
-  <section class="page-hero">
+  <section class="page-hero" id="main">
     <div class="breadcrumb"><a href="index.html">Início</a> › Contato</div>
-    <h1>Fale com <span>Nossa Equipe</span></h1>
-    <p>Solicite um diagnóstico gratuito ou tire suas dúvidas. Retornamos em até 24 horas úteis.</p>
+    <h1>Vamos Dimensionar <span>a Sua Operação</span></h1>
+    <p>A conversa inicial é uma sessão de contexto de uma hora, sem custo, para entender o porte da operação, a estrutura e o estágio de adequação — e indicar por qual das quatro frentes faz sentido começar.</p>
   </section>
 
+  <!-- PRÓXIMOS PASSOS -->
   <section class="section">
+    <div class="container">
+      <div class="steps-row">
+        <div class="step-item">
+          <div class="step-circle">1</div>
+          <h4>Sessão de contexto</h4>
+          <p>Reunião de uma hora com a diretoria e a área fiscal para dimensionar exposição e prioridades da operação.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-circle">2</div>
+          <h4>Diagnóstico dirigido</h4>
+          <p>Pacote Start aplicado à frente mais crítica, com relatório executivo em quatro a seis semanas.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-circle">3</div>
+          <h4>Definição do escopo</h4>
+          <p>Escolha entre as frentes A, B, C e D a partir do que o diagnóstico revelar, com proposta comercial individual.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-circle">4</div>
+          <h4>Execução e ferramenta</h4>
+          <p>Requisitos fiscais validados pela BTA, com a frente D mantendo o controle em operação contínua.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
     <div class="container">
       <div class="contact-grid">
 
         <!-- FORMULÁRIO -->
         <div class="contact-form-box">
-          <h3>Solicite um Diagnóstico Gratuito</h3>
-          <form class="contact-form-el">
+          <h3>Agende sua Sessão de Contexto</h3>
+          <form class="contact-form-el" action="enviar-contato.php" method="POST">
+            <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
             <div class="form-row">
               <div class="form-group">
                 <label for="nome">Nome Completo</label>
@@ -70,100 +115,90 @@
               </div>
             </div>
             <div class="form-group">
-              <label for="porte">Porte da Empresa</label>
-              <select id="porte" name="porte">
+              <label for="setor">Setor</label>
+              <select id="setor" name="setor">
                 <option value="">Selecione...</option>
-                <option value="pme">Pequena e Média Empresa (PME)</option>
-                <option value="grande">Grande Empresa</option>
-                <option value="multinacional">Multinacional</option>
+                <option value="frotas">Locação e Gestão de Frotas</option>
+                <option value="financeiro">Serviços Financeiros</option>
+                <option value="industria">Indústria</option>
+                <option value="software">Software e Serviços Profissionais</option>
+                <option value="outro">Outro</option>
               </select>
             </div>
             <div class="form-group">
-              <label for="servico">Serviço de Interesse</label>
+              <label for="servico">Frente de Interesse</label>
               <select id="servico" name="servico">
                 <option value="">Selecione...</option>
-                <option value="creditos">Gestão de Créditos Tributários</option>
-                <option value="compras">Ferramentas para Área de Compras</option>
-                <option value="fiscal">Contabilidade e Área Fiscal</option>
-                <option value="planejamento">Planejamento Tributário</option>
-                <option value="parametrizacao">Revisão de Parametrização Fiscal</option>
-                <option value="reforma">Gestão da Reforma Tributária</option>
-                <option value="geral">Consultoria Geral</option>
+                <option value="a">A · Consultoria Tributária</option>
+                <option value="b">B · Reforma Tributária</option>
+                <option value="c">C · Eficiência Tributária</option>
+                <option value="d">D · Soluções e Ferramentas</option>
+                <option value="indefinido">Ainda não sei — quero um diagnóstico</option>
               </select>
             </div>
             <div class="form-group">
               <label for="mensagem">Mensagem</label>
-              <textarea id="mensagem" name="mensagem" placeholder="Descreva brevemente o desafio tributário da sua empresa ou a solução que está buscando..."></textarea>
+              <textarea id="mensagem" name="mensagem" placeholder="Descreva brevemente o desafio tributário da sua operação ou a solução que está buscando..."></textarea>
             </div>
             <button type="submit" class="btn-primary" style="width:100%;justify-content:center;font-size:15px;padding:15px;">
-              Enviar e Solicitar Diagnóstico →
+              Enviar e Agendar Sessão →
             </button>
             <div class="success-message">
-              ✓ Mensagem enviada com sucesso! Retornaremos em até 24 horas úteis.
+              ✓ Mensagem enviada com sucesso! Nossa equipe retorna em até 24 horas úteis.
+            </div>
+            <div class="error-message">
+              Não foi possível enviar agora. Tente novamente ou escreva para <a href="mailto:contato@btabrasil.com.br">contato@btabrasil.com.br</a>.
             </div>
             <p style="font-size:12px;color:var(--text-light);text-align:center;margin-top:14px;">
-              Seus dados estão seguros. Não compartilhamos informações com terceiros.
+              Seus dados estão seguros e não são compartilhados com terceiros. Ao enviar, você concorda com nossa <a href="privacidade.html" style="color:var(--orange);">Política de Privacidade</a>.
             </p>
           </form>
         </div>
 
         <!-- INFORMAÇÕES -->
         <div class="contact-info">
-          <h3>Como Podemos Ajudar</h3>
-          <p>Nossa equipe de especialistas está pronta para analisar o cenário tributário da sua empresa e identificar oportunidades concretas de economia fiscal e conformidade.</p>
+          <h3>Fale Diretamente com Quem Executa</h3>
+          <p>Sem camadas de intermediação: quem responde ao seu contato é quem conduz tecnicamente o trabalho.</p>
 
           <div class="contact-item">
-            <div class="contact-item-icon">📧</div>
+            <div class="contact-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m2 6 10 7 10-7"></path></svg></div>
             <div class="contact-item-text">
               <h4>E-mail</h4>
-              <p>contato@bta.com.br</p>
+              <p><a href="mailto:contato@btabrasil.com.br">contato@btabrasil.com.br</a></p>
             </div>
           </div>
           <div class="contact-item">
-            <div class="contact-item-icon">📞</div>
+            <div class="contact-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"></path></svg></div>
             <div class="contact-item-text">
-              <h4>Telefone</h4>
-              <p>(11) 0000-0000</p>
+              <h4>Telefone / WhatsApp</h4>
+              <p><a href="tel:+5511955811912">+55 11 95581-1912</a></p>
             </div>
           </div>
           <div class="contact-item">
-            <div class="contact-item-icon">💬</div>
+            <div class="contact-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
             <div class="contact-item-text">
-              <h4>WhatsApp</h4>
-              <p>(11) 99999-9999</p>
+              <h4>Endereço</h4>
+              <p>Av. Paulista, 1636, sala 1105 · Subconjunto 07<br>Ed. Paulista Corporate · Cerqueira César<br>São Paulo - SP · CEP 01310-200</p>
             </div>
           </div>
           <div class="contact-item">
-            <div class="contact-item-icon">📍</div>
+            <div class="contact-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z"></path></svg></div>
             <div class="contact-item-text">
-              <h4>Localização</h4>
-              <p>São Paulo — SP<br>Atendimento em todo o Brasil</p>
+              <h4>Site</h4>
+              <p><a href="https://www.btabrasil.com.br" target="_blank" rel="noopener">www.btabrasil.com.br</a></p>
             </div>
           </div>
           <div class="contact-item">
-            <div class="contact-item-icon">🕐</div>
+            <div class="contact-item-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg></div>
             <div class="contact-item-text">
-              <h4>Horário de Atendimento</h4>
-              <p>Segunda a Sexta: 8h às 18h</p>
+              <h4>CNPJ</h4>
+              <p>67.306.406/0001-78</p>
             </div>
           </div>
 
-          <div style="background:var(--light-bg);border-radius:var(--radius-lg);padding:28px;margin-top:32px;border:1px solid var(--gray);">
-            <h4 style="font-size:15px;font-weight:700;color:var(--primary);margin-bottom:12px;">O que acontece após o contato?</h4>
-            <div style="display:flex;flex-direction:column;gap:12px;">
-              <div style="display:flex;align-items:flex-start;gap:12px;">
-                <span style="background:var(--gold);color:var(--primary);font-size:11px;font-weight:800;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">1</span>
-                <p style="font-size:13px;color:var(--text-light);line-height:1.6;">Retornamos em até 24h úteis para agendar uma reunião inicial.</p>
-              </div>
-              <div style="display:flex;align-items:flex-start;gap:12px;">
-                <span style="background:var(--gold);color:var(--primary);font-size:11px;font-weight:800;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">2</span>
-                <p style="font-size:13px;color:var(--text-light);line-height:1.6;">Realizamos um diagnóstico gratuito do cenário tributário da sua empresa.</p>
-              </div>
-              <div style="display:flex;align-items:flex-start;gap:12px;">
-                <span style="background:var(--gold);color:var(--primary);font-size:11px;font-weight:800;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">3</span>
-                <p style="font-size:13px;color:var(--text-light);line-height:1.6;">Apresentamos as oportunidades identificadas e uma proposta personalizada.</p>
-              </div>
-            </div>
+          <div style="background:var(--white);border-radius:var(--radius-lg);padding:28px;margin-top:32px;border:1px solid var(--gray);">
+            <h4 style="font-size:15px;font-weight:700;color:var(--navy);margin-bottom:12px;">Por que a janela é agora</h4>
+            <p style="font-size:13px;color:var(--text-light);line-height:1.7;">O ano-teste de 2026 é a única fase em que o erro de enquadramento ainda não tem custo financeiro. A partir de 2027, com a CBS plena e o split payment, o mesmo erro passa a custar capital de giro.</p>
           </div>
         </div>
 
@@ -175,49 +210,51 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="logo">
-          <div class="logo-icon">BTA</div>
+          <div class="logo-icon"></div>
           <div>
-            <span class="logo-text">Business Tax Advisory</span>
-            <span class="logo-subtext">Consultoria Tributária</span>
+            <span class="logo-text">BTA Brasil</span>
+            <span class="logo-subtext">Consultoria Tributária e TI</span>
           </div>
         </a>
-        <p>Inteligência tributária para maximizar os resultados do seu negócio. Especialistas em gestão de créditos fiscais, planejamento tributário e Reforma Tributária.</p>
+        <p>Consultoria tributária boutique especializada em tributação indireta e na Reforma Tributária do Consumo. Atuação sênior direta, sem camadas de intermediação entre você e quem executa.</p>
       </div>
       <div class="footer-col">
-        <h4>Serviços</h4>
+        <h4>Frentes</h4>
         <ul>
-          <li><a href="servicos.html">Créditos Tributários</a></li>
-          <li><a href="servicos.html">Área de Compras</a></li>
-          <li><a href="servicos.html">Área Fiscal</a></li>
-          <li><a href="servicos.html">Planejamento Tributário</a></li>
-          <li><a href="servicos.html">Parametrização Fiscal</a></li>
+          <li><a href="servicos.html#oferta-a">A · Consultoria Tributária</a></li>
+          <li><a href="servicos.html#oferta-b">B · Reforma Tributária</a></li>
+          <li><a href="servicos.html#oferta-c">C · Eficiência Tributária</a></li>
+          <li><a href="servicos.html#oferta-d">D · Soluções e Ferramentas</a></li>
+          <li><a href="conciliacao-creditos.html">Conciliação de Créditos</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Empresa</h4>
         <ul>
-          <li><a href="sobre.html">Sobre a BTA</a></li>
-          <li><a href="sobre.html">Missão e Valores</a></li>
+          <li><a href="sobre.html">Sobre a BTA Brasil</a></li>
+          <li><a href="quem-somos.html">Quem Somos</a></li>
           <li><a href="reforma-tributaria.html">Reforma Tributária</a></li>
           <li><a href="contato.html">Contato</a></li>
+          <li><a href="privacidade.html">Política de Privacidade</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Contato</h4>
         <ul>
-          <li><a href="mailto:contato@bta.com.br">contato@bta.com.br</a></li>
-          <li><a href="tel:+551100000000">(11) 0000-0000</a></li>
-          <li><a href="#">São Paulo — SP</a></li>
-          <li><a href="#">LinkedIn</a></li>
+          <li><a href="mailto:contato@btabrasil.com.br">contato@btabrasil.com.br</a></li>
+          <li><a href="tel:+5511955811912">+55 11 95581-1912</a></li>
+          <li><a href="https://www.btabrasil.com.br" target="_blank" rel="noopener">www.btabrasil.com.br</a></li>
+          <li>CNPJ 67.306.406/0001-78</li>
+          <li>Av. Paulista, 1636, sala 1105 · Subconjunto 07<br>Ed. Paulista Corporate · Cerqueira César<br>São Paulo - SP · CEP 01310-200</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 BTA — Business Tax Advisory. Todos os direitos reservados.</p>
-      <p>Consultoria Tributária de Excelência</p>
+      <p>© 2026 BTA Brasil — Business Tax Advisory. Todos os direitos reservados.</p>
+      <p>Consultoria Tributária e TI · Atendimento em todo o Brasil</p>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=4"></script>
 </body>
 </html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conciliação de Créditos de CBS | BTA Brasil</title>
+  <meta name="description" content="Motor de conciliação da BTA Brasil: cruza as notas fiscais recebidas pelo ERP com a Apuração Assistida da Receita e mostra, nota a nota, se o crédito de CBS bate, se já está disponível e quando estará.">
+  <link rel="canonical" href="https://www.btabrasil.com.br/conciliacao-creditos.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="theme-color" content="#0f2138">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BTA Brasil">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://www.btabrasil.com.br/conciliacao-creditos.html">
+  <meta property="og:title" content="Conciliação de Créditos de CBS | BTA Brasil">
+  <meta property="og:description" content="Saiba quando cada crédito de CBS estará disponível para uso: notas do ERP conciliadas com a Apuração Assistida da Receita.">
+  <meta property="og:image" content="https://www.btabrasil.com.br/media/conciliacao-painel.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Conciliação de Créditos de CBS | BTA Brasil">
+  <meta name="twitter:description" content="Notas do ERP conciliadas com a Apuração Assistida da Receita, nota a nota.">
+  <link rel="stylesheet" href="css/style.css?v=6">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a href="#main" class="skip-link">Pular para o conteúdo</a>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <div class="logo-icon"></div>
+      <div>
+        <span class="logo-text">BTA Brasil</span>
+        <span class="logo-subtext">Consultoria Tributária e TI</span>
+      </div>
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="index.html#ferramentas" class="active">Ferramentas</a></li>
+      <li><a href="reforma-tributaria.html">Reforma Tributária</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="quem-somos.html">Quem Somos</a></li>
+      <li><a href="contato.html" class="nav-cta">Fale Conosco</a></li>
+    </ul>
+    <button type="button" class="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <section class="page-hero" id="main">
+    <div class="breadcrumb"><a href="index.html">Início</a> › <a href="index.html#ferramentas">Ferramentas</a> › Conciliação de Créditos</div>
+    <span class="hero-badge">✦ API Créditos IBS/CBS · Conciliação de Créditos · em piloto</span>
+    <h1>Saiba <span>quando cada crédito</span> de CBS estará disponível</h1>
+    <p>A partir de 2027, o crédito de CBS passa a depender da quitação do débito do fornecedor. O motor de conciliação da BTA cruza as notas recebidas pelo seu ERP com a Apuração Assistida da Receita e mostra, nota a nota, se o crédito bate, se já pode ser usado e quando estará disponível.</p>
+    <div class="hero-buttons page-hero-buttons">
+      <a href="contato.html" class="btn-primary">Agendar uma demonstração →</a>
+      <a href="#como-funciona" class="btn-outline">Como funciona</a>
+    </div>
+  </section>
+
+  <!-- POR QUE IMPORTA -->
+  <section class="section" id="por-que">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Por que isso importa</span>
+        <h2 class="section-title">Ter a nota não é ter o crédito</h2>
+        <p class="section-desc">Com a Reforma Tributária, o crédito deixa de nascer só da nota fiscal. Ele depende do que a Receita registrou e, depois da transição, de o débito do fornecedor ter sido quitado.</p>
+      </div>
+      <div class="reforma-grid">
+        <div class="reforma-card">
+          <div class="reforma-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M7 9h10M7 13h6"></path><path d="m15 15 2 2 4-4"></path></svg>
+          </div>
+          <h3>Crédito condicionado à quitação</h3>
+          <p>Pela LC 214/2025 (art. 47), o crédito é apropriado quando o débito da operação é extinto: pelo split payment, pelo recolhimento feito pela própria empresa compradora ou pelo pagamento do fornecedor na apuração dele. Na transição (art. 48), basta o destaque correto, até essas modalidades entrarem em operação.</p>
+        </div>
+        <div class="reforma-card">
+          <div class="reforma-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"></path><path d="M9 12h6"></path></svg>
+          </div>
+          <h3>A nota no ERP não é o crédito na Receita</h3>
+          <p>Nota que o fornecedor não registrou, valor apurado diferente do destacado, classificação tributária que suspende o crédito, cancelamentos e devoluções. Cada diferença precisa ser vista nota a nota, antes de virar crédito glosado ou esquecido.</p>
+        </div>
+        <div class="reforma-card">
+          <div class="reforma-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 3"></path></svg>
+          </div>
+          <h3>Crédito parado é capital de giro parado</h3>
+          <p>Enquanto o crédito não é apropriado, ele não abate o débito da empresa. Saber a data provável de cada crédito permite planejar o caixa e agir nos atrasos, inclusive recolhendo o tributo pela própria empresa quando compensa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="section section-alt" id="como-funciona">
+    <div class="container conc-grid">
+      <div>
+        <div class="section-header" style="margin-bottom:32px;">
+          <span class="section-label">Como funciona</span>
+          <h2 class="section-title">Do ERP à Receita, todos os dias</h2>
+          <p class="section-desc">Uma integração direta, sem planilhas: o ERP envia as notas, o motor busca a apuração na Receita e devolve a situação de cada crédito.</p>
+        </div>
+        <div class="num-list">
+          <div class="num-row">
+            <div class="num-badge">1</div>
+            <div><h4>O ERP envia as notas recebidas</h4><p>Chave da nota, fornecedor, CBS destacada e forma de pagamento. O envio é idempotente: reenviar a mesma nota não duplica nada.</p></div>
+          </div>
+          <div class="num-row">
+            <div class="num-badge">2</div>
+            <div><h4>Coleta diária na Apuração Assistida</h4><p>O motor consulta os créditos e os recolhimentos da empresa na API oficial da Receita, respeitando o limite de consultas e a janela de 8 dias, com alerta se algum dado puder ter ficado de fora.</p></div>
+          </div>
+          <div class="num-row">
+            <div class="num-badge">3</div>
+            <div><h4>Conciliação nota a nota</h4><p>Cada nota é comparada com o que a Receita apurou: conciliada, divergente, ainda não registrada, suspensa ou sem direito a crédito.</p></div>
+          </div>
+          <div class="num-row">
+            <div class="num-badge">4</div>
+            <div><h4>Previsão de disponibilidade e alertas</h4><p>Para o crédito ainda não disponível, o motor estima a data de liberação conforme a forma de pagamento e o histórico do fornecedor, e avisa o ERP por webhook quando o crédito libera, diverge ou atrasa.</p></div>
+          </div>
+        </div>
+      </div>
+      <figure class="conc-figura">
+        <a href="media/conciliacao-painel.png" target="_blank" rel="noopener" aria-label="Abrir a ilustração do painel em tamanho real">
+          <img src="media/conciliacao-painel.png" width="1200" height="1500" loading="lazy" alt="Ilustração do painel de conciliação: totais de crédito disponível, a apropriar e divergente, lista de notas com a situação de cada crédito e a previsão de liberação por semana.">
+        </a>
+        <figcaption>Ilustração com dados fictícios. A visão real é entregue pela API ao ERP e ao painel do cliente.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- QUANDO LIBERA -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">A regra por trás da previsão</span>
+        <h2 class="section-title">Quando o crédito fica disponível</h2>
+        <p class="section-desc">Cada previsão informa a base legal usada e o grau de confiança, de “estimada” a “confirmada pela Receita”.</p>
+      </div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th>Forma de quitação</th><th>Quando o crédito libera</th><th>Base legal</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Transição</td><td>No registro do documento, se o destaque estiver correto</td><td>LC 214/2025, art. 48</td></tr>
+            <tr><td>Split payment</td><td>Na liquidação do pagamento ao fornecedor</td><td>LC 214/2025, arts. 31 a 33</td></tr>
+            <tr class="is-highlight"><td>Recolhimento pela empresa compradora</td><td>Na arrecadação do recolhimento, identificada na Receita</td><td>LC 214/2025, art. 36</td></tr>
+            <tr><td>Pagamento pelo fornecedor</td><td>Após o vencimento da apuração dele, ajustado pelo histórico de pontualidade</td><td>LC 214/2025, art. 47</td></tr>
+            <tr><td>Fornecedor do Simples no DAS</td><td>Crédito limitado ao recolhido no Simples</td><td>LC 214/2025, art. 47, §9º</td></tr>
+          </tbody>
+        </table>
+        <div class="data-table-note">Prazos ainda não regulamentados são tratados como parâmetros revisados a cada ato normativo, e o histórico real de cada cliente calibra as estimativas.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- O QUE SINALIZA -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">O que o motor sinaliza</span>
+        <h2 class="section-title">Cada situação com a ação que ela pede</h2>
+      </div>
+      <div class="offer-grid conc-sinais">
+        <div class="offer-card">
+          <span class="offer-card-code sinal-ok">Disponível</span>
+          <h4>O crédito já pode ser usado</h4>
+          <p>Confirmado pela Receita, com a data em que foi apropriado e o saldo ainda não utilizado.</p>
+        </div>
+        <div class="offer-card">
+          <span class="offer-card-code">A apropriar</span>
+          <h4>Registrado, aguardando a quitação</h4>
+          <p>Data prevista de liberação e, em caso de atraso, a sugestão de recolher pela própria empresa.</p>
+        </div>
+        <div class="offer-card">
+          <span class="offer-card-code sinal-alerta">Divergente</span>
+          <h4>A Receita apurou outro valor</h4>
+          <p>A diferença entre a CBS destacada e a apurada, para conferir com o fornecedor antes do fechamento.</p>
+        </div>
+        <div class="offer-card">
+          <span class="offer-card-code sinal-alerta">Não localizada</span>
+          <h4>A nota não chegou à Receita</h4>
+          <p>Passado o prazo, o fornecedor não registrou o documento ou a chave no ERP está errada.</p>
+        </div>
+        <div class="offer-card">
+          <span class="offer-card-code">Suspenso</span>
+          <h4>Bloqueado pela classificação</h4>
+          <p>Exigibilidade suspensa pela classificação tributária da operação: revisar o enquadramento da nota.</p>
+        </div>
+        <div class="offer-card">
+          <span class="offer-card-code">Crédito sem nota</span>
+          <h4>A Receita tem, o ERP não</h4>
+          <p>Crédito registrado sem nota correspondente no ERP: documento não escriturado, risco e oportunidade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANTES E DEPOIS DA COMPRA -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header centered">
+        <span class="section-label">Um ciclo completo</span>
+        <h2 class="section-title">Do ranking de fornecedores ao crédito disponível</h2>
+        <p class="section-desc">A mesma plataforma acompanha o crédito nos dois momentos que importam: na escolha do fornecedor e depois da compra.</p>
+      </div>
+      <div class="ciclo-grid">
+        <a class="ciclo-card" href="index.html?v=5#ferramenta">
+          <span class="ciclo-quando">Antes da compra</span>
+          <h3>Ranking de Fornecedores</h3>
+          <p>Compara as propostas pelo valor pago menos o crédito de CBS e IBS que a empresa recupera, com o regime de cada fornecedor confirmado na Receita.</p>
+          <span class="learn-more">Veja a ferramenta em ação →</span>
+        </a>
+        <div class="ciclo-seta" aria-hidden="true">→</div>
+        <div class="ciclo-card is-atual">
+          <span class="ciclo-quando">Depois da compra</span>
+          <h3>Conciliação de Créditos</h3>
+          <p>Confirma, nota a nota, se o crédito previsto chegou à Receita, se está disponível e quando estará, com alerta para cada divergência e atraso.</p>
+          <span class="learn-more">Você está aqui</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTEGRAÇÃO E SEGURANÇA -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Integração e segurança</span>
+        <h2 class="section-title">Feito para rodar dentro da sua operação</h2>
+      </div>
+      <div class="offer-grid">
+        <div class="offer-card">
+          <span class="offer-card-code">Integração</span>
+          <h4>API e webhook com o seu ERP</h4>
+          <ul>
+            <li>Envio das notas recebidas em lote</li>
+            <li>Consulta da situação de cada nota</li>
+            <li>Avisos assinados quando o crédito libera, diverge ou atrasa</li>
+          </ul>
+        </div>
+        <div class="offer-card">
+          <span class="offer-card-code">Dados oficiais</span>
+          <h4>Direto da Apuração Assistida</h4>
+          <ul>
+            <li>API oficial da Receita Federal</li>
+            <li>Coleta diária dentro dos limites da Receita</li>
+            <li>Trilha de cada consulta para auditoria</li>
+          </ul>
+        </div>
+        <div class="offer-card">
+          <span class="offer-card-code">Segurança</span>
+          <h4>A credencial é da sua empresa</h4>
+          <ul>
+            <li>Gerada pela própria empresa no portal da Receita</li>
+            <li>Guardada cifrada, nunca exibida</li>
+            <li>Pode ser revogada a qualquer momento</li>
+          </ul>
+        </div>
+      </div>
+      <p class="conc-escopo">Escopo atual: CBS em notas de serviço e demais documentos fiscais eletrônicos recebidos. O IBS será incluído quando o Comitê Gestor disponibilizar a apuração correspondente.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Quer ver com as notas da sua empresa?</h2>
+      <p>Montamos um piloto com uma amostra das notas de serviço recebidas pela sua operação: a conciliação com a Receita, os créditos em atraso e a previsão de liberação para as próximas semanas.</p>
+      <div class="cta-buttons">
+        <a href="contato.html" class="btn-primary">Agendar uma demonstração →</a>
+        <a href="servicos.html#oferta-c" class="btn-outline">Frente C · Eficiência Tributária</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-icon"></div>
+          <div>
+            <span class="logo-text">BTA Brasil</span>
+            <span class="logo-subtext">Consultoria Tributária e TI</span>
+          </div>
+        </a>
+        <p>Consultoria tributária boutique especializada em tributação indireta e na Reforma Tributária do Consumo. Atuação sênior direta, sem camadas de intermediação entre você e quem executa.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Frentes</h4>
+        <ul>
+          <li><a href="servicos.html#oferta-a">A · Consultoria Tributária</a></li>
+          <li><a href="servicos.html#oferta-b">B · Reforma Tributária</a></li>
+          <li><a href="servicos.html#oferta-c">C · Eficiência Tributária</a></li>
+          <li><a href="servicos.html#oferta-d">D · Soluções e Ferramentas</a></li>
+          <li><a href="conciliacao-creditos.html">Conciliação de Créditos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="sobre.html">Sobre a BTA Brasil</a></li>
+          <li><a href="quem-somos.html">Quem Somos</a></li>
+          <li><a href="reforma-tributaria.html">Reforma Tributária</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="privacidade.html">Política de Privacidade</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="mailto:contato@btabrasil.com.br">contato@btabrasil.com.br</a></li>
+          <li><a href="tel:+5511955811912">+55 11 95581-1912</a></li>
+          <li><a href="https://www.btabrasil.com.br" target="_blank" rel="noopener">www.btabrasil.com.br</a></li>
+          <li>CNPJ 67.306.406/0001-78</li>
+          <li>Av. Paulista, 1636, sala 1105 · Subconjunto 07<br>Ed. Paulista Corporate · Cerqueira César<br>São Paulo - SP · CEP 01310-200</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 BTA Brasil — Business Tax Advisory. Todos os direitos reservados.</p>
+      <p>Consultoria Tributária e TI · Atendimento em todo o Brasil</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=4"></script>
+</body>
+</html>

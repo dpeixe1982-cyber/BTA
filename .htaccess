@@ -1,0 +1,22 @@
+# BTA Brasil — configuração básica do servidor
+ErrorDocument 404 /404.html
+Options -Indexes
+
+# Cache: as páginas HTML são sempre conferidas com o servidor (a cópia só é reaproveitada se não mudou),
+# para que uma atualização apareça na hora. CSS e JS levam ?v= no endereço; imagens e vídeos mudam de nome.
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+  <FilesMatch "\.(png|jpe?g|svg|webp|mp4|webm)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddType video/mp4 .mp4
+  AddType video/webm .webm
+</IfModule>

@@ -3,180 +3,333 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reforma Tributária | BTA - Business Tax Advisory</title>
-  <meta name="description" content="Entenda os impactos da Reforma Tributária no seu negócio e saiba como a BTA pode preparar sua empresa para a maior mudança fiscal da história do Brasil.">
-  <link rel="stylesheet" href="css/style.css">
+  <title>Reforma Tributária | BTA Brasil</title>
+  <meta name="description" content="Cronograma da Reforma Tributária (LC 214/2025 e LC 227/2026), curva de transição do regime geral IBS/CBS de 2026 a 2033 e os pontos de impacto na operação de frota.">
+  <link rel="canonical" href="https://www.btabrasil.com.br/reforma-tributaria.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="theme-color" content="#0f2138">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BTA Brasil">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://www.btabrasil.com.br/reforma-tributaria.html">
+  <meta property="og:title" content="Reforma Tributária | BTA Brasil">
+  <meta property="og:description" content="Cronograma da Reforma Tributária (LC 214/2025 e LC 227/2026), curva de transição do regime geral IBS/CBS de 2026 a 2033 e os pontos de impacto na operação de frota.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Reforma Tributária | BTA Brasil">
+  <meta name="twitter:description" content="Cronograma, curva de transição IBS/CBS 2026-2033 e Atos Conjuntos do Comitê Gestor do IBS.">
+  <link rel="stylesheet" href="css/style.css?v=6">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <a href="#main" class="skip-link">Pular para o conteúdo</a>
 
   <nav class="navbar">
     <a href="index.html" class="logo">
-      <div class="logo-icon">BTA</div>
+      <div class="logo-icon"></div>
       <div>
-        <span class="logo-text">Business Tax Advisory</span>
-        <span class="logo-subtext">Consultoria Tributária</span>
+        <span class="logo-text">BTA Brasil</span>
+        <span class="logo-subtext">Consultoria Tributária e TI</span>
       </div>
     </a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Início</a></li>
       <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="index.html#ferramentas">Ferramentas</a></li>
       <li><a href="reforma-tributaria.html" class="active">Reforma Tributária</a></li>
       <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="quem-somos.html">Quem Somos</a></li>
       <li><a href="contato.html" class="nav-cta">Fale Conosco</a></li>
     </ul>
-    <div class="hamburger">
+    <button type="button" class="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
       <span></span><span></span><span></span>
-    </div>
+    </button>
   </nav>
 
-  <section class="page-hero">
+  <section class="page-hero" id="main">
     <div class="breadcrumb"><a href="index.html">Início</a> › Reforma Tributária</div>
-    <h1>A Maior Reforma Fiscal da <span>História do Brasil</span></h1>
-    <p>Entenda o que muda, quando muda e como a BTA prepara sua empresa para navegar com segurança nessa transformação.</p>
+    <h1>A Transição Não é um Evento — <span>é uma Curva de Sete Anos</span></h1>
+    <p>Alíquota efetiva do regime geral (IBS + CBS) ao longo da transição, e o que cada janela exige da operação. Fonte: LC 214/2025, LC 227/2026 e Decreto nº 12.955/2026.</p>
   </section>
 
-  <!-- CONTEXTO -->
+  <!-- ALERTA + CONTEXTO -->
   <section class="section">
     <div class="container">
       <div class="alert-box">
         <div class="alert-box-icon">⚠️</div>
         <div class="alert-box-text">
-          <h4>Atenção: o relógio está correndo</h4>
-          <p>A Reforma Tributária (EC 132/2023) já está em vigor. O período de transição iniciou em 2026 e se estende até 2033. Empresas que não se prepararem agora estarão em desvantagem competitiva e financeira nos próximos anos.</p>
+          <h4>Não houve prorrogação geral</h4>
+          <p>Ato Conjunto RFB/CGIBS nº 4/2026 (publicado em 31/07/2026): NF-e e NFC-e continuam com destaque obrigatório de IBS/CBS a partir de 03/08/2026. Veja o cronograma completo abaixo.</p>
         </div>
       </div>
 
       <div class="about-grid">
         <div>
           <span class="section-label">O Contexto</span>
-          <h2 class="section-title">O que é a Reforma Tributária?</h2>
-          <p style="font-size:15px;color:var(--text-light);line-height:1.85;margin-bottom:20px;">Aprovada pela Emenda Constitucional nº 132/2023, a Reforma Tributária representa a maior mudança no sistema tributário brasileiro em mais de 50 anos. O objetivo é simplificar a estrutura do consumo, substituindo cinco tributos atuais por um sistema dual.</p>
-          <p style="font-size:15px;color:var(--text-light);line-height:1.85;margin-bottom:20px;">PIS, COFINS e IPI serão extintos e substituídos pela <strong>CBS</strong> (Contribuição sobre Bens e Serviços, federal). ICMS e ISS serão substituídos pelo <strong>IBS</strong> (Imposto sobre Bens e Serviços, estadual/municipal). Haverá ainda o <strong>IS</strong> (Imposto Seletivo) sobre produtos prejudiciais à saúde e ao meio ambiente.</p>
-          <p style="font-size:15px;color:var(--text-light);line-height:1.85;">Além disso, o mecanismo de <strong>Split Payment</strong> transformará radicalmente a forma como os tributos são recolhidos, com impacto direto no fluxo de caixa das empresas.</p>
+          <h2 class="section-title">Cinco tributos viram um IVA dual</h2>
+          <p style="font-size:15px;color:var(--text-light);line-height:1.85;margin-bottom:20px;">PIS, Cofins, IPI, ICMS e ISS dão lugar a um sistema dual: <strong>CBS</strong> (Contribuição sobre Bens e Serviços, federal) e <strong>IBS</strong> (Imposto sobre Bens e Serviços, estadual/municipal). Em paralelo, o <strong>Imposto Seletivo</strong> passa a incidir sobre produtos prejudiciais à saúde e ao meio ambiente.</p>
+          <p style="font-size:15px;color:var(--text-light);line-height:1.85;">O <strong>Split Payment</strong> transforma a forma como o tributo é recolhido: ele deixa de transitar pela conta da empresa e passa a ser retido na liquidação financeira, com efeito direto sobre o capital de giro a partir de 2027.</p>
         </div>
-        <div>
-          <div style="background:var(--light-bg);border-radius:var(--radius-lg);padding:32px;">
-            <h3 style="font-size:16px;font-weight:700;color:var(--primary);margin-bottom:20px;text-transform:uppercase;letter-spacing:0.5px;">Sistema Atual → Sistema Novo</h3>
-            <div style="margin-bottom:16px;">
-              <div style="font-size:12px;font-weight:700;color:var(--text-light);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Serão extintos</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;">
-                <span class="tag" style="background:rgba(231,76,60,0.08);color:#c0392b;">PIS</span>
-                <span class="tag" style="background:rgba(231,76,60,0.08);color:#c0392b;">COFINS</span>
-                <span class="tag" style="background:rgba(231,76,60,0.08);color:#c0392b;">IPI</span>
-                <span class="tag" style="background:rgba(231,76,60,0.08);color:#c0392b;">ICMS</span>
-                <span class="tag" style="background:rgba(231,76,60,0.08);color:#c0392b;">ISS</span>
-              </div>
-            </div>
-            <div style="font-size:20px;text-align:center;margin:16px 0;color:var(--gold);">↓</div>
-            <div>
-              <div style="font-size:12px;font-weight:700;color:var(--text-light);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Substituídos por</div>
-              <div style="display:flex;flex-wrap:wrap;gap:8px;">
-                <span class="tag" style="background:rgba(26,174,96,0.08);color:#1e8449;">CBS (Federal)</span>
-                <span class="tag" style="background:rgba(26,174,96,0.08);color:#1e8449;">IBS (Est./Mun.)</span>
-                <span class="tag" style="background:rgba(26,174,96,0.08);color:#1e8449;">IS (Seletivo)</span>
-              </div>
-            </div>
-            <div style="margin-top:20px;padding-top:20px;border-top:1px solid var(--gray);">
-              <div style="font-size:12px;font-weight:700;color:var(--text-light);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Nova mecânica</div>
-              <span class="tag">Split Payment</span>
-              <span class="tag">Não-cumulatividade plena</span>
-              <span class="tag">Cashback</span>
-            </div>
+        <div class="chart-card">
+          <h3 style="font-size:14px;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:0.5px;">Alíquota efetiva do regime geral (IBS+CBS)</h3>
+          <div class="chart-row">
+            <div class="chart-bar"><div class="chart-bar-fill" style="height:2.6%;"><span class="chart-bar-value">0,7%</span></div></div>
+            <div class="chart-bar"><div class="chart-bar-fill" style="height:37%;"><span class="chart-bar-value">9,8%</span></div></div>
+            <div class="chart-bar"><div class="chart-bar-fill" style="height:37%;"><span class="chart-bar-value">9,8%</span></div></div>
+            <div class="chart-bar"><div class="chart-bar-fill" style="height:52.5%;"><span class="chart-bar-value">13,9%</span></div></div>
+            <div class="chart-bar"><div class="chart-bar-fill" style="height:64.2%;"><span class="chart-bar-value">17,0%</span></div></div>
+            <div class="chart-bar"><div class="chart-bar-fill" style="height:81.1%;"><span class="chart-bar-value">21,5%</span></div></div>
+            <div class="chart-bar"><div class="chart-bar-fill" style="height:92.5%;"><span class="chart-bar-value">24,5%</span></div></div>
+            <div class="chart-bar is-peak"><div class="chart-bar-fill" style="height:100%;"><span class="chart-bar-value">26,5%</span></div></div>
+          </div>
+          <div class="chart-labels">
+            <span>2026</span><span>2027</span><span>2028</span><span>2029</span><span>2030</span><span>2031</span><span>2032</span><span>2033</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TIMELINE -->
+  <!-- PERÍODO DE TRANSIÇÃO -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Período de Transição</span>
+        <h2 class="section-title">Como a Reforma Substitui o Sistema Atual</h2>
+        <p class="section-desc">LC 214/2025 e LC 227/2026: ICMS, ISS e PIS/Cofins encolhem ano a ano enquanto CBS e IBS assumem a arrecadação, até a extinção total do sistema atual em 2033. Ilustração esquemática — não representa proporções exatas de alíquota.</p>
+      </div>
+      <div class="transition-diagram-card">
+        <div class="transition-old-row">
+          <div class="transition-year-col">
+            <div class="transition-seg is-icms" style="height:66px;">ICMS</div>
+            <div class="transition-seg is-iss" style="height:28px;">ISS</div>
+            <div class="transition-seg is-pis" style="height:36px;">PIS/COFINS</div>
+          </div>
+          <div class="transition-year-col">
+            <div class="transition-seg is-icms" style="height:64px;">ICMS</div>
+            <div class="transition-seg is-iss" style="height:27px;">ISS</div>
+            <div class="transition-seg is-pis" style="height:35px;">PIS/COFINS</div>
+          </div>
+          <div class="transition-year-col">
+            <div class="transition-seg is-icms" style="height:58px;">ICMS</div>
+            <div class="transition-seg is-iss" style="height:23px;">ISS</div>
+          </div>
+          <div class="transition-year-col">
+            <div class="transition-seg is-icms" style="height:58px;">ICMS</div>
+            <div class="transition-seg is-iss" style="height:23px;">ISS</div>
+          </div>
+          <div class="transition-year-col">
+            <div class="transition-seg is-icms" style="height:50px;">ICMS</div>
+            <div class="transition-seg is-iss" style="height:19px;">ISS</div>
+          </div>
+          <div class="transition-year-col">
+            <div class="transition-seg is-icms" style="height:42px;">ICMS</div>
+            <div class="transition-seg is-iss" style="height:15px;">ISS</div>
+          </div>
+          <div class="transition-year-col">
+            <div class="transition-seg is-icms" style="height:33px;">ICMS</div>
+            <div class="transition-seg is-iss" style="height:11px;">ISS</div>
+          </div>
+          <div class="transition-year-col">
+            <div class="transition-seg is-icms" style="height:24px;">ICMS</div>
+            <div class="transition-seg is-iss" style="height:7px;">ISS</div>
+          </div>
+          <div class="transition-year-col"></div>
+        </div>
+
+        <div class="transition-timeline">
+          <div class="t-year">2025</div>
+          <div class="t-year">2026</div>
+          <div class="t-year">2027</div>
+          <div class="t-year">2028</div>
+          <div class="t-year">2029</div>
+          <div class="t-year">2030</div>
+          <div class="t-year">2031</div>
+          <div class="t-year">2032</div>
+          <div class="t-year">2033</div>
+        </div>
+
+        <div class="transition-new-row">
+          <div class="transition-year-col"></div>
+          <div class="transition-year-col">
+            <div class="transition-seg is-cbs" style="height:5px;"></div>
+            <div class="transition-seg is-ibs" style="height:3px;"></div>
+          </div>
+          <div class="transition-year-col">
+            <div class="transition-seg is-cbs" style="height:44px;">CBS</div>
+            <div class="transition-seg is-ibs" style="height:6px;">IBS</div>
+          </div>
+          <div class="transition-year-col">
+            <div class="transition-seg is-cbs" style="height:44px;">CBS</div>
+            <div class="transition-seg is-ibs" style="height:6px;">IBS</div>
+          </div>
+          <div class="transition-year-col">
+            <div class="transition-seg is-cbs" style="height:44px;">CBS</div>
+            <div class="transition-seg is-ibs" style="height:18px;">IBS</div>
+          </div>
+          <div class="transition-year-col">
+            <div class="transition-seg is-cbs" style="height:44px;">CBS</div>
+            <div class="transition-seg is-ibs" style="height:30px;">IBS</div>
+          </div>
+          <div class="transition-year-col">
+            <div class="transition-seg is-cbs" style="height:44px;">CBS</div>
+            <div class="transition-seg is-ibs" style="height:42px;">IBS</div>
+          </div>
+          <div class="transition-year-col">
+            <div class="transition-seg is-cbs" style="height:44px;">CBS</div>
+            <div class="transition-seg is-ibs" style="height:54px;">IBS</div>
+          </div>
+          <div class="transition-year-col">
+            <div class="transition-seg is-cbs" style="height:44px;">CBS</div>
+            <div class="transition-seg is-ibs" style="height:86px;">IBS</div>
+          </div>
+        </div>
+
+        <div class="transition-legend">
+          <div class="transition-legend-item"><span class="transition-legend-dot" style="background:var(--navy);"></span>ICMS</div>
+          <div class="transition-legend-item"><span class="transition-legend-dot" style="background:#5c7089;"></span>ISS</div>
+          <div class="transition-legend-item"><span class="transition-legend-dot" style="background:var(--gray);"></span>PIS/Cofins</div>
+          <div class="transition-legend-item"><span class="transition-legend-dot" style="background:var(--orange-light);"></span>CBS</div>
+          <div class="transition-legend-item"><span class="transition-legend-dot" style="background:var(--orange);"></span>IBS</div>
+        </div>
+
+        <div class="transition-notes">
+          <div class="transition-note"><strong>2026 — </strong>destaque das alíquotas-teste: IBS 0,1% e CBS 0,9%.</div>
+          <div class="transition-note"><strong>2027 — </strong>extinção do PIS/Cofins; CBS passa a vigorar em alíquota plena.</div>
+          <div class="transition-note"><strong>2029–2032 — </strong>ICMS e ISS caem 10% ao ano, com aumento gradual do IBS.</div>
+          <div class="transition-note"><strong>2033 — </strong>extinção total do ICMS e ISS; alíquota do regime geral de IBS+CBS prevista em 26,5%.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRÊS JANELAS -->
   <section class="section section-alt">
     <div class="container">
       <div class="section-header">
-        <span class="section-label">Calendário da Reforma</span>
-        <h2 class="section-title">Cronograma de Implementação</h2>
-        <p class="section-desc">A transição é gradual, mas exige preparação imediata. Veja os marcos principais e o que sua empresa precisa ter pronto em cada fase.</p>
+        <span class="section-label">Três Janelas</span>
+        <h2 class="section-title">O que cada fase exige da operação</h2>
+        <p class="section-desc">A transição não chega de uma vez — ela muda de natureza a cada janela, e o custo do erro muda junto.</p>
       </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;">
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-year">2026</div>
-            <h4>Início do período de teste</h4>
-            <p>CBS e IBS começam a ser cobrados a alíquotas reduzidas (0,9% CBS e 0,1% IBS). Empresas devem começar a adaptar sistemas e processos.</p>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-year">2027</div>
-            <h4>Extinção do PIS/COFINS</h4>
-            <p>CBS entra em vigor em alíquota plena. IPI é reduzido a zero (exceto ZFM). IS começa a vigorar. Mudança significativa na estrutura de custo.</p>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-year">2029 — 2032</div>
-            <h4>Transição do ICMS e ISS</h4>
-            <p>Redução gradual das alíquotas de ICMS e ISS, com aumento proporcional do IBS. Período crítico de gestão do duplo regime tributário.</p>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-year">2033</div>
-            <h4>Sistema completamente novo</h4>
-            <p>ICMS e ISS totalmente extintos. IBS em alíquota plena. Conclusão do período de transição — novo sistema tributário consolidado.</p>
-          </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;">
+        <div class="mission-card" style="border-left:4px solid var(--orange);">
+          <h4>2026 · Ano-teste</h4>
+          <p>Destaque obrigatório em DF-e com alíquotas simbólicas (IBS 0,1% e CBS 0,9%). Erro custa quase nada — é a janela de aprendizado, com utilização de créditos sobre pagamentos de fornecedores e sem impacto de recolhimento.</p>
         </div>
-        <div>
-          <div class="mission-card">
-            <h4>Impacto no Fluxo de Caixa</h4>
-            <p>O Split Payment fará com que os tributos sejam retidos no momento do pagamento, impactando diretamente o capital de giro. Empresas precisam mapear esse impacto agora e planejar adequações financeiras.</p>
-          </div>
-          <div class="mission-card">
-            <h4>Impacto nos Sistemas (ERP)</h4>
-            <p>ERPs precisarão ser atualizados para calcular CBS e IBS simultaneamente ao ICMS/ISS durante o período de transição. A parametrização correta é fundamental para evitar erros de apuração.</p>
-          </div>
-          <div class="mission-card">
-            <h4>Impacto na Cadeia de Fornecedores</h4>
-            <p>A forma de aproveitamento de créditos muda com a não-cumulatividade plena do IBS/CBS. É necessário revisar contratos, precificações e a qualificação fiscal de fornecedores.</p>
-          </div>
+        <div class="mission-card" style="border-left:4px solid var(--navy);">
+          <h4>2027–2028 · CBS plena</h4>
+          <p>PIS/Cofins extintos, split payment com efeito real de caixa. Início do uso amplo de crédito tributário para redução dos impactos de recolhimento. O erro passa a custar capital de giro.</p>
+        </div>
+        <div class="mission-card" style="border-left:4px solid #27ae60;">
+          <h4>2029–2033 · IBS gradual</h4>
+          <p>ICMS e ISS caem 10% ao ano, com aumento gradual do IBS. Locação de bens móveis caminha para tributação integral: o cliente PJ se credita de tudo, o cliente PF absorve o aumento por inteiro.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- COMO A BTA AJUDA -->
+  <!-- ATOS CONJUNTOS CGIBS -->
+  <section class="section" id="atos-conjuntos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Regulação em Tempo Real</span>
+        <h2 class="section-title">Atos Conjuntos do Comitê Gestor do IBS</h2>
+        <p class="section-desc">RFB e CGIBS regulamentam a Reforma Tributária do Consumo em conjunto, ato a ato. Acompanhamento dos principais atos já publicados — monitoramento contínuo faz parte da Oferta A.</p>
+      </div>
+      <div class="updates-grid">
+        <div class="update-card">
+          <div class="update-card-date">22/12/2025</div>
+          <span class="update-card-tag">Ato Conjunto nº 1/2025</span>
+          <h3>Obrigações acessórias do IBS e da CBS para 2026</h3>
+          <p>Define o rol de documentos fiscais eletrônicos recepcionados por IBS e CBS. 2026 é ano de testes: apuração meramente informativa, sem efeitos tributários, e sem penalidade por campos em branco até o quarto mês após a publicação dos regulamentos.</p>
+        </div>
+        <div class="update-card">
+          <div class="update-card-date">27/05/2026 · DOU 03/06/2026</div>
+          <span class="update-card-tag">Ato Conjunto nº 2/2026</span>
+          <h3>Manual técnico do Split Payment</h3>
+          <p>Autoriza a divulgação do Manual de Integração e do Swagger da Plataforma Pública do Split Payment, para que prestadores de serviço de pagamento e instituições operadoras de sistemas de pagamento iniciem o desenvolvimento das soluções de segregação e recolhimento de CBS e IBS.</p>
+        </div>
+        <div class="update-card">
+          <div class="update-card-date">19/06/2026 · Divulgado 22/06/2026</div>
+          <span class="update-card-tag">Ato Conjunto nº 3/2026</span>
+          <h3>Documentação técnica da DeRE, versão 1.1.0</h3>
+          <p>Consolida XSD, manual do desenvolvedor e manual de integração técnica (Receita Integra) da Declaração de Regimes Específicos — obrigação central para setores de regime específico, como serviços financeiros, planos de saúde e concursos de prognósticos.</p>
+        </div>
+        <div class="update-card">
+          <div class="update-card-date">30/07/2026 · DOU 31/07/2026</div>
+          <span class="update-card-tag">Ato Conjunto nº 4/2026</span>
+          <h3>Cronograma de emissão obrigatória de documentos fiscais</h3>
+          <p>Divulga o cronograma de obrigatoriedade de emissão dos documentos fiscais eletrônicos e de publicação dos leiautes, com datas entre 03/08/2026 e 01/01/2027. Detalhamento completo logo abaixo.</p>
+        </div>
+      </div>
+      <p style="font-size:13px;color:var(--text-light);text-align:center;margin-top:28px;">Fonte: <a href="https://www.cgibs.gov.br/atos-conjuntos" target="_blank" rel="noopener" style="color:var(--orange);">cgibs.gov.br — Atos Conjuntos do Comitê Gestor do IBS</a></p>
+    </div>
+  </section>
+
+  <!-- CRONOGRAMA NF-e (detalhamento do Ato nº 4) -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Detalhamento · Ato Conjunto RFB/CGIBS nº 4/2026</span>
+        <h2 class="section-title">Cronograma do Destaque na Nota Fiscal</h2>
+        <p class="section-desc">O ato prevê ainda a publicação, em até 30 dias, de um Programa de Conformidade para a emissão de documentos fiscais em 2026.</p>
+      </div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr><th>Data</th><th>Documentos e eventos</th></tr>
+          </thead>
+          <tbody>
+            <tr class="is-highlight"><td>03/08/2026</td><td>NF-e e NFC-e · CT-e, CT-e OS, MDF-e, GTV-e, NF3e e DC-e · NFS-e de Exploração de Via · BP-e (exceto aéreo e semiurbano)</td></tr>
+            <tr><td>01/10/2026</td><td>Regra geral da NFS-e · maioria dos serviços sujeitos ao ISS · NFCom e DIR · eventos de tabela da DeRE</td></tr>
+            <tr><td>15/11/2026</td><td>DeRE · eventos periódicos mensais · primeira entrega referente a outubro/2026, envio até o dia 15 do mês seguinte</td></tr>
+            <tr><td>01/12/2026</td><td>Exceções da NFS-e — locação de bens móveis e imóveis, plataformas digitais e bens imateriais, subitens 1.03, 1.05, 1.09 e 16.01, condomínios, NFGas, NFAg e NF-e ABI</td></tr>
+            <tr><td>01/01/2027</td><td>Simples Nacional · Duimp · NF-e de tributação monofásica · demais eventos da DeRE previstos para 2027</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEIS PONTOS DE IMPACTO -->
   <section class="section">
     <div class="container">
       <div class="section-header centered">
-        <span class="section-label">Nosso Papel</span>
-        <h2 class="section-title">Como a BTA Prepara sua Empresa</h2>
-        <p class="section-desc">Transformamos a complexidade da Reforma Tributária em um plano de ação claro, com etapas definidas e métricas de acompanhamento.</p>
+        <span class="section-label">Onde a Reforma Toca a Operação</span>
+        <h2 class="section-title">Seis Pontos que Deixam de Funcionar em 2027</h2>
+        <p class="section-desc">Cada um deles é um processo que hoje funciona e que, do jeito que está, para de funcionar com a CBS plena. Três decorrem de questionamentos técnicos reais respondidos pela BTA a operadores do setor em julho de 2026.</p>
       </div>
       <div class="reforma-grid">
         <div class="reforma-card">
-          <div class="reforma-card-icon">🔬</div>
-          <h3>Diagnóstico de Impacto</h3>
-          <p>Mapeamento completo de como a Reforma afeta a carga tributária, margem operacional, fluxo de caixa e processos internos da sua empresa. Identificamos ganhos e riscos específicos do seu setor.</p>
+          <div class="reforma-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 10h18M7 15h1m4 0h1"></path><rect x="3" y="5" width="18" height="15" rx="2"></rect></svg></div>
+          <h3>Retenção deixa de existir</h3>
+          <p>O modelo atual de retenção pelo tomador acaba. O valor segregado passa a ser o já destacado na nota, recolhido na liquidação financeira (split payment).</p>
         </div>
         <div class="reforma-card">
-          <div class="reforma-card-icon">🗺️</div>
-          <h3>Roadmap de Adequação</h3>
-          <p>Elaboramos um plano de ação estruturado por fases, alinhado ao calendário da Reforma, com responsáveis, prazos e investimentos necessários para cada etapa da adaptação.</p>
+          <div class="reforma-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"></circle><path d="M9 12h6M12 9v6"></path></svg></div>
+          <h3>Repasse de multas e oficinas</h3>
+          <p>Nota de débito administrativa deixa de bastar. Sem estrutura de reembolso por conta e ordem, o repasse entra na base de cálculo.</p>
         </div>
         <div class="reforma-card">
-          <div class="reforma-card-icon">⚙️</div>
-          <h3>Adequação de Sistemas</h3>
-          <p>Trabalhamos junto à equipe de TI e ao fornecedor do ERP para garantir que a parametrização fiscal esteja correta para o novo modelo, incluindo o período de duplo regime.</p>
+          <div class="reforma-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12a9 9 0 1 1-3-6.7"></path><path d="M21 3v6h-6"></path></svg></div>
+          <h3>Devolução de fatura antecipada</h3>
+          <p>Sinistro e devolução de veículo exigem documento fiscal ou evento eletrônico de devolução. A nota de crédito contábil não ajusta o tributo.</p>
         </div>
         <div class="reforma-card">
-          <div class="reforma-card-icon">💰</div>
-          <h3>Gestão do Split Payment</h3>
-          <p>Análise do impacto no fluxo de caixa e desenvolvimento de estratégias para mitigar a redução de capital de giro provocada pelo novo mecanismo de recolhimento automático.</p>
+          <div class="reforma-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="6" width="20" height="12" rx="2"></rect><path d="M2 10h20"></path></svg></div>
+          <h3>Split payment e capital de giro</h3>
+          <p>O tributo deixa de transitar pela conta da empresa. O float tributário acaba e o fluxo de caixa muda de patamar.</p>
         </div>
         <div class="reforma-card">
-          <div class="reforma-card-icon">📚</div>
-          <h3>Capacitação das Equipes</h3>
-          <p>Treinamento das equipes fiscal, contábil, de compras e financeira para compreensão do novo sistema e das mudanças nos processos operacionais do dia a dia.</p>
+          <div class="reforma-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 13h13l3 5H6Z"></path><circle cx="7.5" cy="21" r="1.5"></circle><circle cx="16.5" cy="21" r="1.5"></circle><path d="M3 6h2l2 7"></path></svg></div>
+          <h3>Crédito na aquisição de frota</h3>
+          <p>Veículos, manutenção, peças, seguro e telemetria passam a gerar crédito integral — o maior bloco de custo da locadora vira crédito.</p>
         </div>
         <div class="reforma-card">
-          <div class="reforma-card-icon">📡</div>
-          <h3>Monitoramento Regulatório</h3>
-          <p>Acompanhamento contínuo das leis complementares, regulamentações e novas interpretações para manter sua empresa sempre atualizada e em conformidade.</p>
+          <div class="reforma-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 4v16h16"></path><path d="m7 14 4-4 3 3 5-6"></path></svg></div>
+          <h3>Venda de seminovos</h3>
+          <p>O desmobilizado ganha tratamento próprio na saída. Enquadramento errado na revenda contamina crédito e margem.</p>
         </div>
       </div>
     </div>
@@ -185,11 +338,11 @@
   <!-- CTA -->
   <section class="cta-section">
     <div class="container">
-      <h2>Sua empresa já está se preparando?</h2>
-      <p>Não espere a última hora. Agende um diagnóstico gratuito e entenda o impacto da Reforma Tributária no seu negócio hoje mesmo.</p>
+      <h2>Sua operação já está pronta para 2027?</h2>
+      <p>O ano-teste de 2026 é a única fase em que o erro de enquadramento ainda não tem custo financeiro. Cada mês sem contratos ajustados e sem cadastro de fornecedores triado é crédito que não volta.</p>
       <div class="cta-buttons">
-        <a href="contato.html" class="btn-primary">Solicitar Diagnóstico Gratuito →</a>
-        <a href="servicos.html" class="btn-outline">Ver Todos os Serviços</a>
+        <a href="contato.html" class="btn-primary">Solicitar Diagnóstico Dirigido →</a>
+        <a href="servicos.html#oferta-b" class="btn-outline">Ver Oferta B · Reforma Tributária</a>
       </div>
     </div>
   </section>
@@ -198,49 +351,51 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="logo">
-          <div class="logo-icon">BTA</div>
+          <div class="logo-icon"></div>
           <div>
-            <span class="logo-text">Business Tax Advisory</span>
-            <span class="logo-subtext">Consultoria Tributária</span>
+            <span class="logo-text">BTA Brasil</span>
+            <span class="logo-subtext">Consultoria Tributária e TI</span>
           </div>
         </a>
-        <p>Inteligência tributária para maximizar os resultados do seu negócio. Especialistas em gestão de créditos fiscais, planejamento tributário e Reforma Tributária.</p>
+        <p>Consultoria tributária boutique especializada em tributação indireta e na Reforma Tributária do Consumo. Atuação sênior direta, sem camadas de intermediação entre você e quem executa.</p>
       </div>
       <div class="footer-col">
-        <h4>Serviços</h4>
+        <h4>Frentes</h4>
         <ul>
-          <li><a href="servicos.html">Créditos Tributários</a></li>
-          <li><a href="servicos.html">Área de Compras</a></li>
-          <li><a href="servicos.html">Área Fiscal</a></li>
-          <li><a href="servicos.html">Planejamento Tributário</a></li>
-          <li><a href="servicos.html">Parametrização Fiscal</a></li>
+          <li><a href="servicos.html#oferta-a">A · Consultoria Tributária</a></li>
+          <li><a href="servicos.html#oferta-b">B · Reforma Tributária</a></li>
+          <li><a href="servicos.html#oferta-c">C · Eficiência Tributária</a></li>
+          <li><a href="servicos.html#oferta-d">D · Soluções e Ferramentas</a></li>
+          <li><a href="conciliacao-creditos.html">Conciliação de Créditos</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Empresa</h4>
         <ul>
-          <li><a href="sobre.html">Sobre a BTA</a></li>
-          <li><a href="sobre.html">Missão e Valores</a></li>
+          <li><a href="sobre.html">Sobre a BTA Brasil</a></li>
+          <li><a href="quem-somos.html">Quem Somos</a></li>
           <li><a href="reforma-tributaria.html">Reforma Tributária</a></li>
           <li><a href="contato.html">Contato</a></li>
+          <li><a href="privacidade.html">Política de Privacidade</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Contato</h4>
         <ul>
-          <li><a href="mailto:contato@bta.com.br">contato@bta.com.br</a></li>
-          <li><a href="tel:+551100000000">(11) 0000-0000</a></li>
-          <li><a href="#">São Paulo — SP</a></li>
-          <li><a href="#">LinkedIn</a></li>
+          <li><a href="mailto:contato@btabrasil.com.br">contato@btabrasil.com.br</a></li>
+          <li><a href="tel:+5511955811912">+55 11 95581-1912</a></li>
+          <li><a href="https://www.btabrasil.com.br" target="_blank" rel="noopener">www.btabrasil.com.br</a></li>
+          <li>CNPJ 67.306.406/0001-78</li>
+          <li>Av. Paulista, 1636, sala 1105 · Subconjunto 07<br>Ed. Paulista Corporate · Cerqueira César<br>São Paulo - SP · CEP 01310-200</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 BTA — Business Tax Advisory. Todos os direitos reservados.</p>
-      <p>Consultoria Tributária de Excelência</p>
+      <p>© 2026 BTA Brasil — Business Tax Advisory. Todos os direitos reservados.</p>
+      <p>Consultoria Tributária e TI · Atendimento em todo o Brasil</p>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=4"></script>
 </body>
 </html>

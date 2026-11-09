@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /enviar-contato.php
+
+Sitemap: https://www.btabrasil.com.br/sitemap.xml
