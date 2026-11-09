@@ -138,3 +138,25 @@ window.addEventListener('load', () => {
     if (topo > 120 || topo < -20) alvo.scrollIntoView({ behavior: 'auto', block: 'start' });
   }, 300);
 });
+
+// Vídeos do YouTube: só carrega o player (youtube-nocookie) quando a pessoa clica.
+// Antes da data de estreia, mostra a etiqueta "Estreia dd/mm às hh:mm".
+document.querySelectorAll('.yt-play').forEach((btn) => {
+  const estreia = btn.dataset.estreia ? new Date(btn.dataset.estreia) : null;
+  if (estreia && Date.now() < estreia.getTime()) {
+    const tag = document.createElement('span');
+    tag.className = 'yt-estreia';
+    const dia = estreia.toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', timeZone: 'America/Sao_Paulo' });
+    const hora = estreia.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' });
+    tag.textContent = `Estreia ${dia} às ${hora}`;
+    btn.appendChild(tag);
+  }
+  btn.addEventListener('click', () => {
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube-nocookie.com/embed/${btn.dataset.yt}?autoplay=1&rel=0`;
+    iframe.title = btn.getAttribute('aria-label') || 'Vídeo';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.allowFullscreen = true;
+    btn.replaceWith(iframe);
+  });
+});

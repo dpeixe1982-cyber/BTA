@@ -1,0 +1,9 @@
+# Arquivos locais que não vão para o GitHub nem para o site
+.claude/
+start-servers.sh
+package-lock.json
+node_modules/
+*.log
+Thumbs.db
+desktop.ini
+.DS_Store
